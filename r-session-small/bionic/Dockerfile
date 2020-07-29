@@ -17,6 +17,7 @@ RUN apt-get update -y && \
     curl \
     gdebi \
     libcurl4-gnutls-dev \
+    libpq5 \
     libssl1.0.0 \
     libssl-dev \
     libuser \
