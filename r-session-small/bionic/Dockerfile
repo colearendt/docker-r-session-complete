@@ -4,7 +4,7 @@ LABEL maintainer="sol-eng@rstudio.com"
 
 # Set versions and platforms
 ARG RSP_PLATFORM=xenial
-ARG RSP_VERSION=1.4.999-12
+ARG RSP_VERSION=1.4.1102-3
 ARG R_VERSION=3.6.3
 ARG MINICONDA_VERSION=py37_4.8.2
 ARG PYTHON_VERSION=3.7.6
@@ -68,6 +68,7 @@ ENV PATH="/opt/python/${PYTHON_VERSION}/bin:${PATH}"
 # Install Jupyter Notebook and RSP/RSC Notebook Extensions and Packages -------#
 
 RUN /opt/python/${PYTHON_VERSION}/bin/pip install \
+    awscli \
     jupyter \
     jupyterlab \
     rsp_jupyter \
